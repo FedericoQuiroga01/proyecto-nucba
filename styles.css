@@ -1,0 +1,326 @@
+/* font */
+
+
+:root {
+    --background-1: #131415;
+    --background-2: #393939;
+    --textos: #ffff;
+    --titulos: #ffb01e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /*fontfamily*/
+    /*border: 1px solid red;*/
+}
+
+body {
+    background: var(--background-1);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    background: var(--background-2);    
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 100px 30px;*/
+}
+
+.logo-img {
+    display: flex;
+    height: 65px;
+}
+
+.carrito-img {
+    display: flex;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.navbar-list a {
+    color: var(--titulos);
+    font-size: 1.1rem;
+}
+
+/*################ Hero ################*/
+
+#hero {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+    margin: 50px 100px;
+}
+.hero-img img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 700;
+    height: 500px;
+    border-radius: 1rem;
+}
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info h1 {
+    color: var(--titulos);
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    align-items: center;
+}
+
+.hero-info p {
+    color: var(--textos);
+    font-size: 1.5rem;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-info button {
+    display: flex;
+    padding: 10px 20px;
+    background-color: var(--titulos);
+    color: var(--textos);
+    border-radius: 0.5rem;
+    font-weight: 100px;
+    font-size: 1rem;
+    border: none;    
+}
+.hero-info button:hover {
+    cursor: pointer;
+}
+/*  QUEDO VIENDO EL JCC QUE NO ME FUNCIONA COMO YO QUIERO,,, PROBAR CON SPACEBETWEEN ENTRE KLA IMG Y LA INFO DEL HERO, HAY QUE ESTILAR EL H1 EL P Y EL BUTTON*/
+
+/*################ ABOUT-US ################*/
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.about-us h2{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    color: var(--titulos);
+    font-size: 40px;
+}
+.about-us p{
+    display: flex;
+    color: var(--textos);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 75%;
+    margin: 0px 175px;
+}
+/*################ CARDS ################*/
+
+#cards {
+    display: flex;
+    flex-direction: column;
+}
+.card-contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+}
+.card-titulo h2{
+    display: flex;
+    color: var(--titulos);
+    justify-content: center;
+    font-size: 40px;
+    margin: 50px; 
+}
+
+.card-container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    gap: 20px;
+    color: var(--textos);
+    background-color: var(--background-2);
+    border-radius: 10px;
+}
+
+.card-img img {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 10%;
+    border-radius: 10px;
+}
+.card-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 20px;
+}
+.card-titulo p {
+    color: var(--textos);
+    font-size: 20px;
+}
+.card-titulo button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--titulos);
+    cursor: pointer;
+}
+.button-mas {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+.button-mas button {
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*################ FORMULARIO ################*/
+
+#contact {
+    justify-content: center;
+}
+
+.contact-titulo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 30px;
+    color: var(--titulos);
+}
+
+.contact-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 70px;
+    margin: 50px;
+}
+
+.contact-img {
+    display: flex;
+    gap: 50px;
+    height: 300px;
+    width: 300px;
+}
+.contact-img img {
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    color: var(--titulos);
+    font-size: 20px;
+}
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.form-button {
+    display: flex;
+    margin: 10% 50%;
+    border: none;
+    background-color: var(--titulos);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-item input {
+    background-color: #393939;
+    border-radius: 5px;  
+    border: none;  
+}
+/* DARLE UN WIDTH AL FORM*/
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    color: var(--titulos);
+    font-size: 20px;
+}
+.footer h3 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-links {
+    margin: 20px;
+    display: flex;
+    font-size: 15px;
+    color: var(--titulos);
+    width: 900px;
+    justify-content: space-between;
+}
+.footer-links i {
+    cursor: pointer;
+}
+.made-by-me {
+    display: flex;
+    justify-content: center;
+    color: var(--background-2);
+    font-size: 20px;
+}
+.made-by-me i {
+    font-size: 13px;
+}
+
+/*SUBIR A GITHUB Y A VERCEL*/
