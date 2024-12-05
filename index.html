@@ -4,29 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Federico Quiroga</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/Iconos/favicon_io (1)/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/Iconos/favicon_io (1)/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/Iconos/favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" href="./assets/Iconos/favicon_io.zip">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="animaciones.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <img class="logo-img" src="./assets/Logo.png" alt="Logo de Renault">
+        <img class="logo-img" src="./assets/Iconos/logo3.png" alt="Logo de Renault">
         <nav class="navbar">
+
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/Iconos/hamburguesa.png" alt="Menu hamburguesa" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle">
             <ul class="navbar-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about-us">Acerca de nosotros</a></li>
+                <li><a href="#cards-1">Autos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
-            <img class="carrito-img" src="/assets/llave auto.png" alt="Llaves de auto">
+        </div>
+
+
+        
+            <!-- Carrito de compras -->     
+            <label for="cart-toggle" class="cart-label">
+                <i class="fa-solid fa-cart-shopping fa-xl" id="carrito"></i>
+            </label>
+            <input type="checkbox" id="cart-toggle">   
+            <div class="cart">
+                <h2>Tus NFTs</h2>
+            <!-- Productos -->
+             <div class="cart-item">
+                <img src="./assets/card-kardian.jpg" alt="Renault Kardian">
+                <div class="item-info">
+                    <h3 class="item-title">Kardian</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 ETH</span>
+                </div>
+                <!-- Botones -->
+                 <div class="item-handler">
+                    <span class="quantity-handler-down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler-up">+</span>
+                 </div>
+             </div>
+             <div class="cart-item">
+                <img src="./assets/card-alaskan.jpg" alt="Renault Alaskan">
+                <div class="item-info">
+                    <h3 class="item-title">Alaskan</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 ETH</span>
+                </div>
+                <!-- Botones -->
+                 <div class="item-handler">
+                    <span class="quantity-handler-down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler-up">+</span>
+                 </div>
+             </div>
+             <div class="cart-item">
+                <img src="./assets/card-duster.jpg" alt="Renault Duster">
+                <div class="item-info">
+                    <h3 class="item-title">Duster</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 ETH</span>
+                </div>
+                <!-- Botones -->
+                 <div class="item-handler">
+                    <span class="quantity-handler-down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler-up">+</span>
+                 </div>
+             </div>
+             <div class="cart-item">
+                <img src="./assets/card-koleos.jpg" alt="Renault Koleos">
+                <div class="item-info">
+                    <h3 class="item-title">Koleos</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 ETH</span>
+                </div>
+                <!-- Botones -->
+                 <div class="item-handler">
+                    <span class="quantity-handler-down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler-up">+</span>
+                 </div>
+             </div>
+
+            <!-- Divisor -->
+             <span class="divider"></span>
+             <div class="cart-total">
+                <p>Total :</p>
+                <span>18.3 ETH</span>
+             </div>
+             <button class="btn-buy">Comprar</button>
+            </div>
         </nav>
     </header>
+    <main>
     <section id="hero">
         <div class="hero-img">
             <img src="./assets/img-hero.jpg" alt="Renault-Kardian">
         </div>
         <div class="hero-info">
-            <h1>Tu Renault 0km con descuento</h1>
-            <p>Te ofrezco mi descuento como empleado de Renault, para que vos puedas comprar tu 0km.</p>
-            <button class="hero-button">Mas Info</button>
+            <h1>Comprá tu Renault 0km con descuento</h1>
+            <p>Te ofrezco mi descuento como empleado de Renault, para que puedas comprar tu 0km hasta un 17% mas barato que en el mercado.</p>
+            <div class="hero-boton">
+                <button> Más info </button>
+            </div>
+        </div>
+    </section>
+    <section id="hero2">
+        <div class="hero-info">
+            <h1>Comprá tu Renault 0km con descuento</h1>
+            <div class="hero-img">
+                <img src="./assets/img-hero.jpg" alt="Renault-Kardian">
+            </div>
+            <p>Te ofrezco mi descuento como empleado de Renault, para que puedas comprar tu 0km hasta un 17% mas barato que en el mercado.</p>
+            <button class="hero-button">Más Info</button>
         </div>
     </section>
     <section id="about-us">
@@ -35,7 +136,7 @@
             <p>Me llamo Federico Quiroga, soy empleado de la fabrica Renault Santa Isabel desde hace 6 años, cuento con un descuento especial de empleado, que permite comprar autos 0km de contado, con un importantisimo descuento</p>
         </div>
     </section>
-    <section id="cards">
+    <section id="cards-1">
         <div class="card-titulo">
             <h2>Modelos disponibles este mes</h2>
         </div>
@@ -113,35 +214,121 @@
             <button>Ver mas modelos »</button>
         </div>
     </section>
+    <section id="tarjetas-2">
+            <div class="card-titulo">
+                <h2>Modelos disponibles este mes</h2>
+            </div>
+            <!--Card 1-->  
+            <div class="card-contenedor">
+                <div class="card-container">
+                    <div class="card-img">
+                        <img src="./assets/card-alaskan.jpg" alt="">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Alaskan</h3>
+                        <p>Podes comprarlo a partir de $....</p>
+                        <button>Comprar ahora</button>
+                    </div>
+                </div>
+                <!--Card 2-->  
+                <div class="card-container">
+                    <div class="card-img">
+                        <img src="./assets/card-kardian.jpg" alt="">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Kardian</h3>
+                        <p>Podes comprarlo a partir de $....</p>
+                        <button>Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+            <!--Card 3-->  
+                <div class="card-contenedor">
+                    <div class="card-container">
+                        <div class="card-img">
+                            <img src="./assets/card-koleos.jpg" alt="">
+                            </div>
+                        <div class="card-titulo">
+                        <h3>Koleos</h3>
+                        <p>Podes comprarlo a partir de $....</p>
+                        <button>Comprar ahora</button>
+                            </div>
+                        </div>
+                            <!--Card 4-->  
+                       <div class="card-container">
+                       <div class="card-img">
+                         <img src="./assets/card-stepway.jpg" alt="">
+                       </div>
+                       <div class="card-titulo">
+                          <h3>Stepway</h3>
+                           <p>Podes comprarlo a partir de $....</p>
+                        <button>Comprar ahora</button>
+                     </div>
+                </div>
+            </div>
+                <!--Card 5-->  
+                <div class="card-contenedor">
+                    <div class="card-container">
+                    <div class="card-img">
+                        <img src="./assets/card-duster.jpg" alt="">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Duster</h3>
+                        <p>Podes comprarlo a partir de $....</p>
+                        <button>Comprar ahora</button>
+                    </div>
+                </div>
+                <!--Card 6-->  
+                <div class="card-container">
+                    <div class="card-img">
+                        <img src="./assets/card-master.jpg" alt="">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Master</h3>
+                        <p>Podes comprarlo a partir de $....</p>
+                        <button>Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+
+    
+        <div class="button-mas">
+            <button>Ver mas modelos »</button>
+        </div>
+    </section>
     <section id="contact">
         <div class="contact-titulo">
             <h2>Ponete en contacto conmigo</h2>
         </div>
         <div class="contact-principal">
-            <div class="contact-img">
-                <img src="./assets/trezor.jpg" alt="Renault Trezor">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.6472600233683!2d-64.2353904249419!3d-31.368711793947238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432993024c1d245%3A0xbc79604225a5e07f!2sAv.%20Rafael%20N%C3%BA%C3%B1ez%204236-4264%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1725534052378!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-            <div class="form-container">
-                <form action="">
-                    <div class="form-item">
-                        <label for="name">Nombre</label>
-                         <input type="text" name="name" id="name">
-                     </div>
-                     <div class="form-item">
-                         <label for="email">Mail</label>
-                         <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-item">
-                         <label for="telefono">Telefono</label>
-                         <input type="text" name="telefono" id="telefono">
-                    </div>
-                    <button class="form-button" type="submit">Enviar</button>
-                </form>
+                <div class="form-container">
+                    <form action="">
+                        <div class="form-item">
+                            <label for="name">Nombre</label>
+                             <input type="text" name="name" id="name">
+                         </div>
+                         <div class="form-item">
+                             <label for="email">Mail</label>
+                             <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-item">
+                             <label for="telefono">Telefono</label>
+                             <input type="text" name="telefono" id="telefono">
+                        </div>
+                       <div class="form-item">
+                        <textarea name="textarea" id="textarea">Horario de contacto</textarea>
+                       </div>
+                        <button class="form-button" type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
+            
         </div>
     </section>
-
+</main>
     <section id="footer">
         <div class="footer">
             <h3>Encontrame tambien en:</h3>
@@ -152,10 +339,10 @@
                 <li> <i class="fa-brands fa-square-whatsapp"></i> Whatsapp</li>
                 <li> <i class="fa-brands fa-square-instagram"></i> Instagram</li>
                 <li> <i class="fa-solid fa-square-envelope"></i> Email</li>
-            </ul>
+                </ul>
         </div>
         <div class="made-by-me">
-            <p>Pagina creada por Federico Quiroga, todos los derechos reservados <i class="fa-regular fa-registered"></i></p>
+            <p>Página creada por Federico Quiroga, todos los derechos reservados <i class="fa-regular fa-registered"></i></p>
         </div>
     </section>
 </body>
