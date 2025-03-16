@@ -1,35 +1,78 @@
-<!DOCTYPE html>     
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Login</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="animaciones.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="animaciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <img class="logo-img" src="./assets/Iconos/logo3.png" alt="Logo de Renault">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#about-us">Acerca de nosotros</a></li>
-                <li><a href="#cards-1">Autos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+      <img
+        class="logo-img"
+        src="./assets/Iconos/logo3.png"
+        alt="Logo de Renault"
+      />
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="./index.html">Inicio</a></li>
+        </ul>
+        <ul class="navbar-list-2">
+          <li><a href="./login.html">Ingresá</a></li>
+          <li><a href="./registro.html">Registrate</a></li>
+        </ul>
+      </nav>
     </header>
-    <section class="login">
-        <div class="login">
-            <h1>Ingresa tus datos</h1>
-            <form action="">
 
-            </form>
-            <a href="">¿Olvidaste tu contraseña?</a>
-            <a href="">Crear Cuenta</a>
-        </div>
+    <section class="login">
+      <h1>Ingrese sus datos</h1>
+      <input
+        class="controls"
+        type="text"
+        name="usuario"
+        placeholder="Ingrese su usuario"
+      />
+      <input
+        class="controls"
+        type="password"
+        name="contraseña"
+        placeholder="Ingrese su Contraseña"
+      />
+      <div class="boton">
+        <button>Entrar</button>
+      </div>
+      <div class="links">
+        <a class="links-2" href="">¿Olvidaste tu contraseña?</a>
+        <a class="links-2" href="./registro.html">Crear Cuenta</a>
+      </div>
     </section>
-    
-</body>
+
+    <section id="footer">
+      <div class="footer">
+        <h3>Encontrame tambien en:</h3>
+      </div>
+      <div class="links">
+        <ul class="footer-links">
+          <li><i class="fa-brands fa-square-facebook"></i> Facebook</li>
+          <li><i class="fa-brands fa-square-whatsapp"></i> Whatsapp</li>
+          <li><i class="fa-brands fa-square-instagram"></i> Instagram</li>
+          <li><i class="fa-solid fa-square-envelope"></i> Email</li>
+        </ul>
+      </div>
+      <div class="made-by-me">
+        <p>
+          Página creada por Federico Quiroga, todos los derechos reservados
+          <i class="fa-regular fa-registered"></i>
+        </p>
+      </div>
+    </section>
+  </body>
 </html>

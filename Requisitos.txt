@@ -17,7 +17,7 @@ localización de la página, así como también un iframe con un mapa).
 
 👉✔ Debe contar con un footer.
 
-👉❌ Deberá contar con una página de login y una de registro (externas a la landing pero vinculadas a la misma, y 
+👉✔ Deberá contar con una página de login y una de registro (externas a la landing pero vinculadas a la misma, y 
 de las cuales se pueda volver a la landing).
 
 👉✔ Debe ser responsive, adaptable a todos los dispositivos y poseer menú hamburguesa(que sea funcional usando el 
