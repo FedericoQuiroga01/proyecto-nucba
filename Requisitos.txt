@@ -25,7 +25,7 @@ método que vimos en clase) para aquellas resoluciones en las que sea necesario.
 
 👉✔No pueden usar Lorem, piensen una idea de página y que los textos sean acordes a su página.
 
-👉❌ Deberán entregar el link de Github y el de Vercel. Asegúrense de que no tengan el repositorio en privado y de 
+👉✔ Deberán entregar el link de Github y el de Vercel. Asegúrense de que no tengan el repositorio en privado y de 
 no entregar el link a su Dashboard propio en Vercel.
 
 https://excalidraw.com/#json=5zhs8NFQBc5yc34sJahyj,9IpXc7AnuknsMab7TRdZmA
